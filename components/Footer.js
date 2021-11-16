@@ -16,8 +16,9 @@ const ExternalLink = ({ href, children }) => (
 export default function Footer() {
   return (
       <div className={styles.footer}>
-        <p><Link href="/"><a>{TITLE}</a></Link> &mdash; <i>{DESCRIPTION}</i><br></br>
-          This site is built with Next.js and Markdown. &copy; {YEAR} <ExternalLink href="https://github.com/narmanguebraun">N.A.B</ExternalLink>
+        <p>
+          <Link href="/"><a>{TITLE}</a></Link> &mdash; <i>{DESCRIPTION}</i><br></br>
+          &copy; {YEAR} <ExternalLink href="https://github.com/narmanguebraun">N.A.B</ExternalLink>. This site is built with Next.js and Markdown.
         </p>
       </div>
     )

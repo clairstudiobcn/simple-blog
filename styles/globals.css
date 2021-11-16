@@ -102,12 +102,3 @@ pre{margin-top: 0;
 }
 b, strong { font-weight:500; }
 i, em{font-style: italic;}
-
-@media (max-width: 767px) {
-  .footer{position:relative;display:block;width:100%;}
-  .connect{position:relative;display:block;width:100%;}
-}
-@media (max-width: 600px) {
-  .footer{position:relative;display:block;width:100%;}
-  .connect{position:relative;display:block;width:100%;}
-}
