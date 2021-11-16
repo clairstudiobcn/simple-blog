@@ -1,0 +1,113 @@
+/* RESET - http://meyerweb.com/eric/tools/css/reset/ - v2.0 | 20110126 - License: none (public domain) */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* FONTS */
+@font-face {
+  font-family: 'Inter var';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+  src: url(/fonts/Inter-roman.latin.var.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Inter var';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: block;
+  src: url(/fonts/Inter-italic.latin.var.woff2) format('woff2');
+  font-named-instance: 'Italic';
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+}
+
+/* MODE */
+:root {
+  --fg: #444;
+  --bg: #fff;
+  --fw: 450;
+}
+
+[data-theme='light'] {
+  --fg: #444;
+  --bg: #fff;
+  --fw: 450;
+}
+
+[data-theme='dark'] {
+  --fg: #fff;
+  --bg: #000;
+  --fw: 350;
+}
+
+html,
+body {
+  font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-feature-settings: 'case' 1, 'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02',
+  'cv03' 1, 'cv04' 1;
+  font-variation-settings: 'wght' var(--fw);
+  font-variant: common-ligatures contextual;
+  letter-spacing: 0.0375em;
+  font-size: 13px;
+  line-height: 2rem;
+  background-color: var(--bg);
+/*  background: linear-gradient(to top, rgb(119, 121, 120), rgb(163, 163, 163));*/
+  color: var(--fg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 13px;
+  line-height: 2rem;
+}
+h1, h2, h3 {
+  margin:0 0 2rem;
+}
+
+p {
+  line-height: 2rem;
+}
+li {
+  line-height: 2rem;
+}
+ul {
+  margin:0 0 2rem;
+  list-style-type: none;
+}
+a {
+  color: var(--fg);
+  text-decoration: none;
+}
+a:hover {
+  font-style:italic;
+}
+
+code{font-family: 'Courier New', monospace;letter-spacing: 0;color:#4f4f60;}
+pre{margin-top: 0;
+    margin-bottom: 24px;
+    padding: 12px;
+    font-size: 1em;
+    background: #000; /* #f0f0f0 */
+    color: #4f4f60;
+    border-radius: 2px;
+    overflow-x: auto;
+    padding: 13px 15px;
+}
+b, strong { font-weight:500; }
+i, em{font-style: italic;}
+
+@media (max-width: 767px) {
+  .footer{position:relative;display:block;width:100%;}
+  .connect{position:relative;display:block;width:100%;}
+}
+@media (max-width: 600px) {
+  .footer{position:relative;display:block;width:100%;}
+  .connect{position:relative;display:block;width:100%;}
+}
